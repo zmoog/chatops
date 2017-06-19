@@ -1,0 +1,35 @@
+{
+  "response_type": "in_channel",
+  "attachments": [
+    {
+      "title": "ECS Cluster Instance",
+      "fields": [
+        {
+          "title": "State",
+          "value": "running",
+          "short": false
+        },
+        {
+          "title": "Instance Id",
+          "value": "i-05a2a54fda923da28",
+          "short": false
+        },
+        {
+          "title": "Private Ip Address",
+          "value": "172.22.49.8",
+          "short": false
+        },
+        {
+          "title": "Launch Time",
+          "value": "2017-06-15T13:02:38.000Z",
+          "short": false
+        },
+        {
+          "title": "Instance Type",
+          "value": "t2.small",
+          "short": false
+        }
+      ]
+    }
+  ]
+}

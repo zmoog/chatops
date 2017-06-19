@@ -1,0 +1,10 @@
+{
+  "name": "tfm-slack",
+  "description": "Slack App for TFM Project",
+  "memory": 512,
+  "timeout": 5,
+  "role": "arn:aws:iam::xxxxxxxxxxxx:role/tfm-slack_lambda_function",
+  "environment": {
+    "VERIFICATION_TOKEN": "xxxx"
+  }
+}

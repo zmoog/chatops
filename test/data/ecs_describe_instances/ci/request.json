@@ -1,0 +1,137 @@
+{
+  "Reservations": [
+    {
+      "ReservationId": "r-xxxxxxxxxxxx",
+      "OwnerId": "xxxxxxxxxxxx",
+      "Groups": [],
+      "Instances": [
+        {
+          "InstanceId": "i-xxxxxxxxxxxx",
+          "ImageId": "ami-xxxxxxxxxxxx",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "PrivateDnsName": "ip-xxxxxxxxxxxx.eu-west-1.compute.internal",
+          "PublicDnsName": "ec2-xxxxxxxxxxxx.eu-west-1.compute.amazonaws.com",
+          "StateTransitionReason": "",
+          "KeyName": "xxxxxxxxxxxx",
+          "AmiLaunchIndex": 0,
+          "ProductCodes": [],
+          "InstanceType": "t2.small",
+          "LaunchTime": "2017-06-15T13:02:38.000Z",
+          "Placement": {
+            "AvailabilityZone": "eu-west-1a",
+            "GroupName": "",
+            "Tenancy": "default"
+          },
+          "Monitoring": {
+            "State": "disabled"
+          },
+          "SubnetId": "subnet-xxxxxxxxxxxx",
+          "VpcId": "vpc-xxxxxxxxxxxx",
+          "PrivateIpAddress": "xxxxxxxxxxxx",
+          "PublicIpAddress": "xxxxxxxxxxxx",
+          "Architecture": "x86_64",
+          "RootDeviceType": "ebs",
+          "RootDeviceName": "/dev/xvda",
+          "BlockDeviceMappings": [
+            {
+              "DeviceName": "/dev/xvda",
+              "Ebs": {
+                "VolumeId": "vol-xxxxxxxxxxxx",
+                "Status": "attached",
+                "AttachTime": "2017-06-15T13:02:39.000Z",
+                "DeleteOnTermination": true
+              }
+            },
+            {
+              "DeviceName": "/dev/xvdcz",
+              "Ebs": {
+                "VolumeId": "vol-xxxxxxxxxxxx",
+                "Status": "attached",
+                "AttachTime": "2017-06-15T13:02:39.000Z",
+                "DeleteOnTermination": true
+              }
+            }
+          ],
+          "VirtualizationType": "hvm",
+          "ClientToken": "",
+          "Tags": [
+            {
+              "Key": "Environment",
+              "Value": "ci"
+            },
+            {
+              "Key": "Name",
+              "Value": "xxxxxxxxxxxx-ecs-cluster-node-1"
+            },
+            {
+              "Key": "Project",
+              "Value": "tfm"
+            }
+          ],
+          "SecurityGroups": [
+            {
+              "GroupName": "xxxxxxxxxxxx-cluster-security-group",
+              "GroupId": "sg-xxxxxxxxxxxx"
+            }
+          ],
+          "SourceDestCheck": true,
+          "Hypervisor": "xen",
+          "NetworkInterfaces": [
+            {
+              "NetworkInterfaceId": "eni-xxxxxxxxxxxx",
+              "SubnetId": "subnet-xxxxxxxxxxxx",
+              "VpcId": "vpc-xxxxxxxxxxxx",
+              "Description": "",
+              "OwnerId": "xxxxxxxxxxxx",
+              "Status": "in-use",
+              "MacAddress": "xxxxxxxxxxxx",
+              "PrivateIpAddress": "xxxxxxxxxxxx",
+              "PrivateDnsName": "ip-xxxxxxxxxxxx.eu-west-1.compute.internal",
+              "SourceDestCheck": true,
+              "Groups": [
+                {
+                  "GroupName": "xxxxxxxxxxxx-cluster-security-group",
+                  "GroupId": "sg-xxxxxxxxxxxx"
+                }
+              ],
+              "Attachment": {
+                "AttachmentId": "eni-attach-a7922f4c",
+                "DeviceIndex": 0,
+                "Status": "attached",
+                "AttachTime": "2017-06-15T13:02:38.000Z",
+                "DeleteOnTermination": true
+              },
+              "Association": {
+                "PublicIp": "xxxxxxxxxxxx",
+                "PublicDnsName": "ec2-xxxxxxxxxxxx.eu-west-1.compute.amazonaws.com",
+                "IpOwnerId": "amazon"
+              },
+              "PrivateIpAddresses": [
+                {
+                  "PrivateIpAddress": "xxxxxxxxxxxx",
+                  "PrivateDnsName": "ip-xxxxxxxxxxxx.eu-west-1.compute.internal",
+                  "Primary": true,
+                  "Association": {
+                    "PublicIp": "xxxxxxxxxxxx",
+                    "PublicDnsName": "ec2-xxxxxxxxxxxx.eu-west-1.compute.amazonaws.com",
+                    "IpOwnerId": "amazon"
+                  }
+                }
+              ],
+              "Ipv6Addresses": []
+            }
+          ],
+          "IamInstanceProfile": {
+            "Arn": "arn:aws:iam::xxxxxxxxxxxx:instance-profile/xxxxxxxxxxxx-server-profile",
+            "Id": "xxxxxxxxxxxx"
+          },
+          "EbsOptimized": false,
+          "EnaSupport": true
+        }
+      ]
+    }
+  ]
+}

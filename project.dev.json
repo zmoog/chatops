@@ -4,7 +4,7 @@
   "runtime": "nodejs6.10",
   "memory": 256,
   "timeout": 5,
-  "role": "arn:aws:iam::731459125315:role/chatops-dev-lambda-role",
+  "role": "arn:aws:iam::xxxxxxxxxxxx:role/chatops-dev-lambda-role",
   "nameTemplate": "chatops_dev_{{.Function.Name}}",
   "environment": {},
   "hooks": {

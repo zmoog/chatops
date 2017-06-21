@@ -10,9 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "^2.74.0"
+    "aws-sdk": "^2.74.0",
+    "lodash": "4.17.4"
   },
   "devDependencies": {
+    "@types/lodash": "4.14.56",
     "@types/mocha": "^2.2.41",
     "@types/aws-lambda": "0.0.10",
     "@types/node": "^7.0.31",

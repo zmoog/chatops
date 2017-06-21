@@ -8,7 +8,6 @@ describe("ECS Describe Instances, given a command from Slack", () => {
     let processor: ECSDescribeInstancesProcessor;
 
     context("When the Slack command is valid", () => {
-
         let command: SlackCommand =
             {
                 token: "xxxx",
@@ -28,7 +27,6 @@ describe("ECS Describe Instances, given a command from Slack", () => {
         });
 
         it("should return an response with attachments", () => {
-
             let response = processor.execute(command);
 
             expect(response.response_type).to.be("in_channel");

@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "lib": [
+      "es5",
+      "es6"
+    ],
+    "types": [
+      "node",
+      "mocha"
+    ]
+  }
+}

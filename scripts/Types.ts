@@ -1,4 +1,44 @@
-export type SlackCommand = {
+
+//
+// Events API
+//
+
+export class Event {
+    token: string
+    type: string
+    challenge?: string
+}
+
+export class CallbackEvent extends Event {
+    team_id: string
+    api_app_id: string
+    event: {
+        type: string
+        user: string,
+        text: string,
+        ts: string,
+        channel: string
+        event_ts: string
+    }
+    authed_users: string[]
+    event_id: string
+    event_time: number
+}
+
+export type URLVerificationResponse = {
+    challenge: string
+}
+
+export type EventResponse = {
+    challenge?: string
+    message?: string
+}
+
+//
+// Commands
+//
+
+export type SlashCommand = {
     token: string,
     team_id: string
     team_domain: string
@@ -10,6 +50,17 @@ export type SlackCommand = {
     text: string
     response_url: string
 }
+
+
+export type SlashCommandResponse = {
+    text: string
+};
+
+
+export type SlackConfig = {
+    token: string
+};
+
 
 //
 // For example:

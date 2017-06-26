@@ -1,0 +1,5 @@
+{
+  "hooks": {
+    "deploy": "../../node_modules/.bin/mocha-webpack --webpack-config ../../webpack.config-test.js '../../test/scripts/**/*.ts' && ../../node_modules/.bin/mocha-webpack --webpack-config ../../webpack.config-test.js ../../test/functions/process_events/*.ts"
+  }
+}

@@ -4,9 +4,11 @@
   "runtime": "nodejs6.10",
   "memory": 256,
   "timeout": 5,
-  "role": "arn:aws:iam::xxxxxxxxxxxx:role/chatops-dev-lambda-role",
+  "role": "arn:aws:iam::731459125315:role/chatops-dev-lambda-role",
   "nameTemplate": "chatops_dev_{{.Function.Name}}",
-  "environment": {},
+  "environment": {
+    "BOT_USER_OAUTH_ACCESS_TOKEN": "xoxb-203959825974-LVJHJNHBxd3bJ5E10uFsaL01"
+  },
   "hooks": {
     "build": "../../node_modules/.bin/webpack --config ../../webpack.config.js --bail",
     "clean": "rm *.js && rm -rf .tmp",

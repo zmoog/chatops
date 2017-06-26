@@ -1,13 +1,16 @@
 import mocha = require("mocha");
 import expect = require("expect.js");
-import {SlashCommand} from "../../scripts/Types";
+import {Event, EventResponse, SlashCommand} from "../../../scripts/Types";
+import {Pipeline} from "../../../scripts/bootstrap/Pipeline";
+import {CommandPipeline} from "../../../scripts/bootstrap/CommandPipeline";
 
 
-describe("ECS Describe Instances, given a command from Slack", () => {
+describe("ProcessCommands Function, given a Slash Command from Slack", () => {
 
-    let processor: ECSDescribeInstancesProcessor;
+    let pipeline: CommandPipeline;
 
-    context("When the Slack command is valid", () => {
+    context("When the Slash Command is valid", () => {
+
         let command: SlashCommand =
             {
                 token: "xxxx",
@@ -23,21 +26,15 @@ describe("ECS Describe Instances, given a command from Slack", () => {
             };
 
         beforeEach(() => {
-            processor = new ECSDescribeInstancesProcessor();
+            pipeline = new CommandPipeline();
         });
 
-        it("should return an response with attachments", () => {
-            let response = processor.execute(command);
+        it("should return a message.", () => {
 
-            expect(response.response_type).to.be("in_channel");
+            let response: EventResponse = pipeline.execute(command);
+
+            // expect(response.challenge).to.be(response);
         });
-
     });
+
 });
-
-
-class ECSDescribeInstancesProcessor {
-    execute(command: SlashCommand): any {
-        return null;
-    }
-}

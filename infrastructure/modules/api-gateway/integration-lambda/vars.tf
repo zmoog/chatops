@@ -34,3 +34,33 @@ variable "authorization" {
   description = "The type of authorization used for the method (NONE, CUSTOM, AWS_IAM)"
   default     = "NONE"
 }
+
+// Unused
+
+variable "method_request_models" {
+  type = "map"
+  default = {
+    "application/json" = "Empty"
+  }
+}
+
+variable "integration_request_templates" {
+  type = "map"
+  default = {
+    "application/json" = ""
+  }
+}
+
+variable "integration_response_templates" {
+  type = "map"
+  default = {
+    "application/json" = ""
+  }
+}
+
+variable "method_response_models" {
+  type = "map"
+  default = {
+    "application/json" = "Empty"
+  }
+}
